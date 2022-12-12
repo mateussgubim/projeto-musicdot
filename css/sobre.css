@@ -1,5 +1,6 @@
 body {
-    width: 940px;
+    width: 80%;
+    max-width: 940px;
     margin-left: auto;
     margin-right: auto;
 
@@ -19,6 +20,8 @@ body {
 }
 
 figure {
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 15px;
     margin: 30px;
 
@@ -99,4 +102,19 @@ figcaption {
 .rodape__copyright {
     display: inline;
     margin-left: 1em;
+}
+
+@media screen and (max-width: 850px) {
+    .contato__secao, .contato__secao--telefone {
+        display: block;
+        margin-left: 1ch;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .fig-familia {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
